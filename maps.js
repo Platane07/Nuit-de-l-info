@@ -28,4 +28,28 @@ function callback( position ) {
     var lng = position.coords.longitude;
     console.log( lat, lng );
     // Do stuff
+    var div = document.getElementById("navigation");
+	var svg = document.createElement("svg");
+       svg.innerHTML = "<iframe style='border: 0'; src='https://www.google.com/maps/search/"+lat+","+lng+"' width='600' height='450' frameborder='0'></iframe>";
+       console.log("<iframe style='border: 0'; src='https://www.google.com/maps/search/"+lat+","+lng+"' width='600' height='450' frameborder='0'></iframe>")
+       div.innerHMTL = svg;
+}
+
+function alternative() {
+	$.ajax({
+		// pensez à définir le chemin vers admin-ajax.php…
+		// … en front via localize_script()…
+		// … au moment de l'enqueue de votre script
+		url:'maps.php',
+		data:{
+			action:get_user_coords
+		}
+	}).done( function( data ){
+		if ( data.success ) {
+			var lat = data.data.lat;
+			var lat = data.data.lng;
+    		console.log( lat, lng );
+			// Do stuff
+		}
+	});
 }
