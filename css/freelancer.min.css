@@ -9599,11 +9599,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #000000;
+  background-color: #fff;
 }
 
 .divider-custom.divider-light .divider-custom-icon {
-  color: #000000 !important;
+  color: #fff !important;
 }
 
 .btn-xl {
