@@ -10,7 +10,7 @@
 
   <title> EtuAssist </title>
 
-  <!-- Custom fonts for this theme -->
+  <!-- Custom fonts for this themse -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -25,51 +25,59 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">ETU-ASSIST</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html">ETU-ASSIST</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 Menu
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Présentation</a>
-          </li>
            <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Forum</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Forum.html">Forum</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Localisation</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Localisation.html">Localisation</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- Masthead -->
+ 
+ <!-- Masthead -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/1.png" alt="">
-
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Etu-Assist</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">Navigation</h1><br></br>
+
+
+
+      <form action="/maps.php" method="post">
+        <label for="name">Recherche :</label>
+        <input type="text" id="recherche">
+        <button type="submit" value="rechercher">
+      </form>
+
+      <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.207049454749!2d-1.5729033!3d47.2125309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0fcda6c4cb%3A0xd620ca38dafa1e9a!2s2+Rue+La+Motte+Picquet%2C+44100+Nantes!5e0!3m2!1sfr!2sfr!4v1423244007186" width="600" height="450" frameborder="0"></iframe>
 
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
+      <div class="divider-custom divider-light align-items-left">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
         </div>
-        <div class="divider-custom-line"></div>
+        <div class="divider-custom-line align-item-left"></div>
       </div>
 
       <!-- Masthead Subheading -->
       <p class="masthead-subheading font-weight-light mb-0">Assistance pour étudiant précarisé</p>
 
     </div>
+
   </header>
+
+
+  
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -81,6 +89,7 @@ Menu
           <p class="lead mb-0">2215 John Daniel Drive
             <br>Clark, MO 65243</p>
         </div>
+
 
         <!-- Footer Social Icons -->
         <div class="col-lg-4 mb-5 mb-lg-0">
