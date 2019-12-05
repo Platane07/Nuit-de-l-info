@@ -46,7 +46,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -6449,6 +6448,7 @@ button.bg-dark:focus {
 
 .d-flex {
   display: flex !important;
+  float : margin-left;
 }
 
 .d-inline-flex {
