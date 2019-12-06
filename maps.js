@@ -1,23 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // On vérifie que la méthode est implémenté dans le navigateur
 if ( navigator.geolocation ) {
 	// On demande d'envoyer la position courante à la fonction callback
