@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+         <!-- Custom fonts for this themse -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+    <body>
+        <!--Nav-->
+         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ETU-ASSIST</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="connexion.html">Forum</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Localisation.html">Localisation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        
+        <!-- Features -->
+        <div class="features-container section-container">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-sm-12 features section-description wow fadeIn">
+                        <h2>Formulaire</h2>
+                        <div class="divider-1 wow fadeInUp"><span></span></div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    
+                    <form id = "rond" class="well form-horizontal"  method = "post" action="ajout.php" id="contactForm">
+                        <fieldset>
+                            
+                            </br>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Prénom">Pseudo</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="visPrenom" required ="required" pattern = ".{2,30}" placeholder="Axel" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Mot de passe</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="visNom" type="password" font style ="text-transform: uppercase" required ="required" pattern = ".{2,30}" placeholder="123" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "form-group">
+                                <label cal=""></label>
+                            </div>
+                            <div class="alert alert-success" role="alert" id="success_message"> <i class="glyphicon glyphicon-thumbs-up"></i>
+                            Fini.</div>
+                            <!-- button radio-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"></label>
+                                <div class="col-md-4">
+                                    <button type="submit" ss class="btn btn-warning">Envoyé <span class="glyphicon glyphicon-send"></span></button>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Locatio1n -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">2215 John Daniel Drive
+            <br>Clark, MO 65243</p>
+          </div>
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Liens réseaux sociaux</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-dribbble"></i>
+            </a>
+          </div>
+          <!-- Footer About Text -->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">TEAM ITTOQQORTOMITT</h4>
+            <p class="lead mb-0">Jolan-Bastien-Etienne</br>Yannis-Nicolas-Salvatore</br>Florian-Enzo
+              <a href="http://startbootstrap.com"></a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

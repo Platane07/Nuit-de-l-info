@@ -158,13 +158,13 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #9294bb;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #117964;
+  color: #6610f2;
   text-decoration: underline;
 }
 
@@ -5090,7 +5090,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding: 0.75rem 1.25rem;
   margin-bottom: -0.125rem;
   background-color: #fff;
-  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border: 0.05rem solid rgba(0, 0, 0, 0.125);
 }
 
 .list-group-item:first-child {
@@ -5113,8 +5113,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #9294bb;
+  border-color: #000000;
 }
 
 .list-group-horizontal {

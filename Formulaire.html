@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aristide Berges</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="style.css">
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+		<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../indexn.html">Arsitide Berges</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="../indexn.html">
+								<i class="fa fa-home"></i> <span>Accueil</span>
+							</a>
+						</li>
+						<li>
+							<a href="../Index2/indexn2.html">
+								<i class="fa fa-binoculars"></i> <span>Détails</span>
+							</a>
+						</li>
+						<li>
+							<a href="../Index3/indexn3.html">
+								<i class="fa fa-building"></i> <span>Lycée</span>
+							</a>
+						</li>
+						<li>
+							<a href="../Index4/indexn4.html">
+								<i class="fa fa-phone"></i> <span>Contact</span>
+							</a>
+						</li>
+						<li>
+							<a href="../Formulaire/Formulaire.html">
+								<i class="fa fa-paper-plane"></i> <span>Formulaire</span>
+							</a>
+						</li>
+						<li>
+							<a href="../Enregistrements/Enregistrements.php">
+								<i class="fa fa-archive"></i> <span>Enregistrements</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="container">
+            	
+                <div class="row">
+                    <div class="col-sm-12 text wow fadeInLeft">
+                        <h1 id="h1"><strong>Aristide Berges</strong></h1>
+                        <div class="description">
+                        	<p class="medium-paragraph">
+                         	 <strong>COM : Communication</strong>
+                        	</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="features-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col-sm-12 features section-description wow fadeIn">
+	                    <h2>Formulaire</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="container">
+    
+					<form id = "rond" class="well form-horizontal"  method = "post" action="enregistrer.php " id="contactForm">
+						<fieldset>	
+				
+						</br>
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="Prénom">Prénom</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="visPrenom" required ="required" pattern = ".{2,30}" placeholder="Axel" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+							
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Nom</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="visNom" font style ="text-transform: uppercase" required ="required" pattern = ".{2,30}" placeholder="DURAND" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Sexe</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<select name="visSexeM" class="form-control selectpicker">
+											<option value=" ">Selection du sexe</option>
+											<option >Homme</option>
+											<option >Femme</option>
+										</select>
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Date de naissance</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="visDateNais" required ="required" pattern = ".{2,15}" placeholder="16/08/1999" class="form-control" type="date">
+									</div>
+								</div>
+							</div>
+						 
+							
+							<div class="form-group">
+								<label class="col-md-4 control-label">Section actuelle</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+										<input name="visSectionActuelle" required ="required" pattern = ".{2,100}" placeholder="SIO" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Etablissement actuel</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+										<input name="visEtablissementActuel" required ="required" pattern = ".{2,30}" placeholder="Etablissement actuel" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+						   <div class="form-group">
+								<label class="col-md-4 control-label">Adresse</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+										<input name="visAdresse" autocomplete = "false" required ="required" pattern = ".{2,256}" placeholder="Place Victor Hugo" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Ville</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+										<input name="visVille" required ="required" pattern = ".{2,30}" placeholder="Grenoble" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+						
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Code postal</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+										<input name="visCodePostal" required ="required"  placeholder="38000" maxlengt = 5 pattern = "[0-9]{5}" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label" >Mail</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+										<input name="visCourrier" autocomplete = "false" required ="required" maxlengt = 100 type = "email" placeholder="exemple.test@outlook.fr" class="form-control">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label">Téléphone</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+										<input name="visTelephone" autocomplete = "false" required ="required" maxlengt = 10 pattern = "[0-9]{10}" placeholder="0656184608" class="form-control" type="tel">
+									</div>
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-md-4 control-label" >BTS : </label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input type="text" name="visSection" readonly = "readonly" value = "COM" class="form-control" />    
+									</div>
+								</div>
+							</div>
+							<div class = "form-group">
+							<label cal=""></label>
+							</div>
+							<div class="alert alert-success" role="alert" id="success_message"> <i class="glyphicon glyphicon-thumbs-up"></i>
+								Merci d'être passé.</div>
+						   <!-- button radio-->
+							<div class="form-group">
+								<label class="col-md-4 control-label"></label>
+								<div class="col-md-4">
+									<button type="submit" ss class="btn btn-warning">Envoyé <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+				
+						</fieldset>
+					</form>
+				</div>
+				</div>
+	        </div>    
+	            
+        </div>
+		
+		<!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+    </body>
+
+</html>
