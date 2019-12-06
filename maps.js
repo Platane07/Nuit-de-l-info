@@ -91,8 +91,8 @@ function alternative() {
 		// … en front via localize_script()…
 		// … au moment de l'enqueue de votre script
 		url:'maps.php',
-		type:'GET'
-		data:'str'
+		/*type:'GET'
+		data:'str'*/
 		data:{
 			action:get_user_coords
 		}

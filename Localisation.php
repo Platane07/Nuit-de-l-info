@@ -36,10 +36,10 @@ Menu
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
            <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Forum.html">Forum</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="connexion.html">Forum</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Localisation.html">Localisation</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Localisation.php">Localisation</a>
           </li>
         </ul>
       </div>
@@ -93,12 +93,29 @@ function getUserIP()
 
 
 $user_ip = getUserIP();
-
+$query = @unserialize(file_get_contents('http://ip-api.com/php/'.$user_ip)); //connection au serveur de ip-api.com et recuperation des données
+if($query && $query['status'] == 'success') 
+{
+  echo $query['city'];
+  //code avec les variables
+  //echo "<iframe style=\"border: 0;\"src=\"https://www.google.com/maps/place/".$query['city'];
+}
 echo $user_ip;
+include 'https://www.google.com/maps/place/'.$query['city'];
+echo $query['city'];
 ?>
 <script type="text/javascript">
     var ipAdr = "<?php echo $user_ip; ?>";
+    var cityAdr = "<?php echo $query['city']; ?>";
     console.log("var js : "+ipAdr);
+    xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+    if(xhr.readyState == 4 && xhr.status == 200) {
+    document.getElementById('navigation').innerHTML = xhr.responseText;
+  }
+};
+xhr.open('GET','https://www.google.com/maps/place/'+cityAdr, true);
+xhr.send();
 </script>
 
 
