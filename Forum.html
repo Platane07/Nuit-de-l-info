@@ -39,11 +39,34 @@
    <a href="#" class="list-group-item active" title="Secteurs d'activité">
   Secteurs d'activité
    </a>
-   <a href="#" class="list-group-item" title="Industrie"><i class="fa fa-industry"></i> Industrie</a>
-  <a href="#" class="list-group-item" title="Automobile"><i class="fa fa-automobile"></i> Automobile</a>
-  <a href="#" class="list-group-item" title="Téléphonie"><i class="fa fa-mobile"></i> Téléphonie</a>
-  <a href="#" class="list-group-item" title="Banque"><i class="fa fa-bank"></i> Banque</a>
-</div>
+  <!-- <a href="#" class="list-group-item" title="Industrie"><i class="fa fa-industry"></i> Industrie</a>-->
+   <?php
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=bdd_forum', 'root', 'root');
+                 
+                 
+                // On recupere tout le contenu de la table Client
+            $reponse = $bdd->query('SELECT titre,epingle FROM topic WHERE epingle=1');
+              
+            // On affiche le resultat
+            while ($donnees = $reponse->fetch())
+            {
+                echo "Epinglé : ";
+                echo "<a href=http://localhost/$donnees[titre]/>$donnees[titre]</a><br>";
+            }
+            $reponse = $bdd->query('SELECT titre,id_topic,epingle FROM topic ORDER BY date_last LIMIT 5');
+            while ($donnees = $reponse->fetch())
+            {
+                echo "<a href=http://localhost/ouvertureTopic.php?topic=$donnees[id_topic] class="fa fa-industry" />$donnees[titre]</a><br>";
+            }
+            $reponse->closeCursor();
+            }
+            catch(Exception $e)
+            {
+                die('Erreur : '.$e->getMessage());
+            }
+        ?>
 </header>
 
 <!-- Masthead Avatar Image -->
